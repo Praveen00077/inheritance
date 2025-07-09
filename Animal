@@ -6,8 +6,8 @@ public class Animal {
     void sleep(){
         
     }
-   static class bird extends Animal{
-        void fly(){
+    static class bird extends Animal{
+       static void fly(){
             System.out.println("bird is flying");
         }
         void eat(){
@@ -19,11 +19,11 @@ public class Animal {
         
     }
     public static void main(String[] args) {
-        Animal ps=new bird();
+        Animal.bird ps=new Animal.bird();
         ps.eat();
         ps.sleep();
-       
-        
+        ps.fly();
+    
         
      
     }
