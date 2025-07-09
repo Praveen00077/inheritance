@@ -1,0 +1,30 @@
+import java.util.*;
+public class Animal {
+    void eat(){
+      
+    }
+    void sleep(){
+        
+    }
+   static class bird extends Animal{
+        void fly(){
+            System.out.println("bird is flying");
+        }
+        void eat(){
+        System.out.println("Animal is eating");
+    }
+    void sleep(){
+        System.out.println("Animal is sleeping");
+    }
+        
+    }
+    public static void main(String[] args) {
+        Animal ps=new bird();
+        ps.eat();
+        ps.sleep();
+       
+        
+        
+     
+    }
+}
