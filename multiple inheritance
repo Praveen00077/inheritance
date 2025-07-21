@@ -1,0 +1,31 @@
+interface readable{
+    void read();
+}
+interface writable{
+    void Write();
+}
+interface storable{
+    void store();
+}
+class file implements readable,writable,storable{
+     public void read(){
+        System.out.println("read");
+    }
+    public void Write(){
+       
+            System.out.println("write");
+        }
+    
+    public void store(){
+        System.out.println("store");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		file obj=new file();
+		obj.read();
+		obj.Write();
+		obj.store();
+	}
+}
